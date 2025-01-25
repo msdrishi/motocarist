@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/d484ddbd9b.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <title>Moto Carist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<section class="header">
+    
+    <nav>
+        <a href="ind.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="material-icons" onclick="hideMenu()">close </i>
+          
+            <ul>
+                    <li><a href="#hme">HOME</a></li>
+                    <li><a href="#abt">ABOUT</a></li>
+                    <li><a href="#mod">MODELS</a></li>
+                    <li><a href="#con">CONTACT</a</li>
+                        
+            </ul>
+        </div>
+        <i class="material-icons" onclick="showMenu()">menu</i>
+           
+        
+    </nav>
+    <div class="text-box" id="hme">
+        <h1>MOTO CARIST</h1>   
+        <p>
+            Since 2019, I’ve provided my professional Graphic Designer services to individuals and <br>
+            businesses alike. I create the tools needed to stand out in a crowded market,<br>
+           giving my clients a creative and professional boost.
+        </p>
+        <a href="https://www.instagram.com/__moto_carist_/" target="_blank" class="hero-btn">Visit Us To Know More</a>
+     </div>
+
+
+</section>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+           
+       function showMenu(){
+           navLinks.style.right = "0";
+       }
+       function hideMenu(){
+           navLinks.style.right = "-200px";
+       }
+   
+</script>
+
+
+
+<section class="campus" id="mod">
+    <h1> OUR MODELS </h1>
+    <p>
+        We have some reference model collection from our page
+    </p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/img5.jpg" >
+            <div class="layer">
+                <a href="n1.html"><h3>BIKE</h3></a>
+            </div>
+        </div>    
+        <div class="campus-col">
+            <img src="images/car.jpg">
+            <div class="layer">
+                <h3>CARS</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="images/human.jpg" >
+            <div class="layer">
+                <h3>MANIPULATION</h3>
+            </div>
+        </div>
+        
+
+
+        
+        
+            
+        
+    </div>
+
+</section>
+
+
+
+<section class="slide" style="max-width:800px">
+    <img class="mySlides w3-animate-fading" src="images/m12.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/m1.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/m31.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/m3.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/m21 (2).jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/m2.jpg" style="width:100%">
+</section>
+  
+  <script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3500);    
+  }
+  </script>
+
+
+
+<!------ testimonials------>
+<section class="testimonials">
+    <h1>CLIENT REVIEWS</h1>
+    <p>“Reach out to customers on Instagram and in a friendly way—ask them to write a review. Most of them will!” </p>
+    
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/cl2.jpg">
+            <div>
+                <p>
+                    I like your work so I posted you in my story thanks for making a little art piece from my photo :)
+                </p>
+                <h3>Marie__jana</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/cl1.jpg">
+            <div>
+                <p>
+                   Someone made me one the other day for free butnits not the quality like yours:):)
+                </p>
+                <h3>Bulletproof<br>welder</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            
+            </div>
+        </div>
+    </div>
+
+</section>  
+<section class="cta1" id="con">
+
+    <h1>CONTACT US</h1>
+    <p>1.Select your favourite Models and Send your Picture through below Mail with better quality<br>
+        2.Make a Payment through below Paypal Address.<br>
+        3.To know About our Model Rates , Message us in Instagram.<br>
+        4.More than 3 Pictures has Discounts.
+    </p>
+    
+    <div class="cta" > 
+    <h1> Grab your models with great discounts</h1>
+    <a href="https://mail.google.com/mail/u/0/#search/motocarist%40gmail.com?compose=CllgCJZZQbQhkzCLBHzCJLFPZlhsJnwLvCMVPjZxdmtNCkHgkcjmSwMBpHwlBjSHRPDXZsvvwgB" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        MAIL US
+    </a>
+    <a href="" >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        PAYPAL
+    </a>
+   
+    
+</div>
+</section>
+
+
+
+<section class="footer" id="abt">
+    <h4>About Us</h4>
+    <p>
+      Since 2019,We are making some creative Graphic Design using photoshop <br>
+      and We have more models on our page with interesting outputs<br>
+      .Payment through Paypal for International transfer and Gpay for Indian currency.
+   </p>
+
+   <div class="icons">
+       <a href="https://www.facebook.com/pages/category/Artist/__moto_carist-106240144275739/" class="fa fa-facebook" ></a>
+       <a href="https://www.instagram.com/__moto_carist/" class="fa fa-instagram"></a>
+       <a class="fa fa-twitter"></a>
+       <a href="https://mail.google.com/mail/u/0/#search/motocarist%40gmail.com?compose=new" class="fa fa-envelope"></a>
+      
+   </div>
+</section>  
+
+
+
+  
+</body>    
+</html>
